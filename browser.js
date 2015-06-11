@@ -2,10 +2,6 @@
 
 var controls = require('./lib/controls');
 
-controlsArray.forEach((item) =>{
-  controls[item] = new EventEmitter();
-});
-
 function speak(text){
   const msg = {
     command: 'speak',
@@ -18,7 +14,7 @@ function speak(text){
 }
 
 module.exports = {
-  controls = require(,
-  speak
+  controls : controls,
+  speak : speak
 }
 
